@@ -1,5 +1,6 @@
 package springbootdemo.com.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,10 +29,12 @@ public class UserController {
 	@ApiOperation(value="获取用户列表", notes="")
 		public BaseResponse<List<User>> show(){
 		BaseResponse<List<User>> response = new BaseResponse<List<User>>() ;
+		List<User> a = new ArrayList<User>();
 		try{
 			response.setMessage("查询成功");
 			response.setResponseStatus(1);
-			response.setData(userdao.findAll());
+			a.add(userdao.findByuserId(1l));
+			response.setData(a);
 		}catch(Exception ex){	
 			response.setMessage("查询失败"+ex.getMessage());
 			response.setResponseStatus(0);

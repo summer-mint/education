@@ -13,7 +13,7 @@ import springbootdemo.com.Entity.User;
 @Component
 public interface Userdao extends JpaRepository<User,Integer>{
 
-
+	public User findByuserId(long userId);
 
 	 
 }
