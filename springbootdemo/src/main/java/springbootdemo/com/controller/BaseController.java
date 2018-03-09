@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
  
 @RestController
-public class TestController {
+public class BaseController {
 
 	@RequestMapping("/")
     public ModelAndView index() {
@@ -15,4 +15,6 @@ public class TestController {
 		   return mv;  
    
     }
+	
+	
 }

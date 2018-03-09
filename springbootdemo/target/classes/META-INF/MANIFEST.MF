@@ -3,7 +3,7 @@ Implementation-Title: springbootdemo
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Administrator
 Implementation-Vendor-Id: springbootdemo
-Build-Jdk: 1.8.0_111
+Build-Jdk: 1.8.0_65
 Implementation-URL: http://projects.spring.io/spring-boot/springbootde
  mo/
 Created-By: Maven Integration for Eclipse
